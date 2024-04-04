@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Array is the collection of data</h1>
+    </center>
+    <hr>
+
+
+
+    <h1>By Array literal</h1>
+
+    <script>
+        let fruit = ['apple','bannana','orange','Mango','papaya',1000,2122]
+        document.write(typeof fruit + '<br>')
+        document.write("fruit length = ", fruit.length + "<br>")
+        document.write("frist index value =",fruit[0]  + "<br>")
+        document.write("second index value =",fruit[1]  + "<br>")
+
+        for(let index =0; index<fruit.length; index++){
+            document.write(fruit[index]  + "<br>")
+        }
+
+    </script>
+
+
+
+    <h1>By creating instance of array object or constructor directly (using new key word)</h1>
+
+<script>
+    let empName = new Array()
+    document.write(typeof empName + '<br>')
+    empName[0] = "nandhan";
+    empName[1] = "Adharsh";
+    empName[2] = "arun";
+    empName[3] = "kiran";
+    empName[4] = "hemanth";
+    empName[5] = "nayan";
+    empName[6] = "krishna";
+    empName[7] = "ganesha";
+
+
+    document.write("empName length = ", empName.length + "<br>")
+    document.write("frist index value =",empName[0]  + "<br>")
+    document.write("second index value =",empName[1]  + "<br>")
+
+    for(let index =0; index<empName.length; index++){
+        document.write(empName[index]  + "<br>")
+    }
+
+
+</script>
+
+    <h1>By using an Array objects constructor with parameter (using new key word)</h1>
+
+    <script>
+
+
+        let studentinfo = new Array('ak','pk','khan','amir')
+        document.write(typeof studentinfo + '<br>')
+        document.write("studentinfo length = ", studentinfo.length + "<br>")
+        document.write("frist index value =",studentinfo[0]  + "<br>")
+        document.write("second index value =",studentinfo[1]  + "<br>")
+
+        for(let index =0; index<studentinfo.length; index++){
+            document.write(studentinfo[index]  + "<br>")
+        }
+    </script>
+</body>
+</html>

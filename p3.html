@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <h1>2) join();</h1>
+    <p>THE JOIN() returns a new string by concatenating all of the elements in an array. Separated by camas or a specified separator string.</p>
+
+   </center> 
+   <hr>
+
+   <p><b>SYNTAX :</b></p>
+   <pre>
+    array.join(separator);
+   </pre>
+   <hr>
+
+
+   <script>
+    let bike = ['yamaha', 'Honda','Bajaj','tvs'];
+    document.write(`<h1>Array.join(): ${typeof bike.join()}</h1>`)
+    document.write(`<h1>Array.join(): ${ bike.join()}</h1>`)
+
+    document.write(`<h1>Array.join(): ${ bike.join(" ")}</h1>`)
+    document.write(`<h1>Array.join(): ${ bike.join("-")}</h1>`)
+    document.write(`<h1>Array.join(): ${ bike.join("/ ")}</h1>`)
+    document.write(`<h1>Array.join(): ${ bike.join("hello ")}</h1>`)
+
+
+
+   </script>
+</body>
+</html>

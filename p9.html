@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>8) concat();</h1>
+        <p>the concat() concatenates ( join) two or more array. Returns a new array.Concatinating the join arrays.</p>
+        <p>This method does not change the existing arrays</p>
+    </center>
+    <hr>
+
+    <p><b>SYNTAX :</b></p>
+    <pre>
+        array1.concat(array2,array3,.......,arrayX)
+    </pre>
+
+    <script>
+        let array1 = [1,2,3]
+        let array2 = [4,5,6,7]
+        let array3 = [8,9,10,11]
+        let array4 = [12,13,14]
+        
+        
+        let new_array = array1.concat(array2,array3,array4)
+        document.write(`<h1>new array type is : ${typeof new_array}</h1>`)
+        document.write(`<h1>new array type is : ${new_array}</h1>`)
+        document.write(`<h1>new array type is : ${array1}</h1>`)
+        document.write(`<h1>new array type is : ${array2}</h1>`)
+        document.write(`<h1>new array type is : ${array3}</h1>`)
+        document.write(`<h1>new array type is : ${new_array[5]}</h1>`)
+
+
+
+    </script>
+</body>
+</html>
