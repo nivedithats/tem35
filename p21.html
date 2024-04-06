@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>20) every();</h2>
+        <p>The every() method tests whether all elements in the array pass the test implemented by the provided function.</p>
+        <p>It returns a Boolean value.</p>
+    </center>
+    <hr>
+    <p><b>SYNTAX :  </b></p>
+
+
+    <pre>
+        array.every((element)=>{});
+    </pre>
+
+    <hr>
+
+    <script>
+        let price = [100,200,300,400,500,600,700];
+
+        const checkPrice  =  price.every((element)=>element>500); //all the elements is staisfied the condition
+        document.write(`<h1>array.every() : ${checkPrice}</h1>`)
+
+        if(checkPrice){
+            document.write(`<h1>yes the given stack price is satisfied with our price</h1>`)
+        }
+        else{
+            document.write(`<h1>no the given stack price is not satisfied with our price</h1>`)
+
+        }
+
+        const checkPrice1  =  price.every((element)=>element>50);
+        document.write(`<h1>array.every() : ${checkPrice1}</h1>`)
+
+  
+        if(checkPrice1){
+            document.write(`<h1>yes the given stack price is satisfied with our price</h1>`)
+        }
+        else{
+            document.write(`<h1>no the given stack price is not satisfied with our price</h1>`)
+
+        }
+    </script>
+</body>
+</html>

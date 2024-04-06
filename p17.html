@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <p>The find() method returns the frist elements in the provided array that satisfies the provided testing function.</p>
+    <p>If no values satisfiy the testing function,undefined is returned </p>
+</center>
+<hr>
+
+<p><b>SYNTAX:</b></p>
+<pre>
+    array.find((element)=>{})
+</pre>
+
+
+
+
+
+<script>
+    let array = [5,12,8,44,123]
+
+    //example1
+    const found = array.find((item)=>item>10);
+
+    //example2
+    const newItem =  array.find((item) => {
+        if(item == 123){
+        return"123 is present in arrray";
+    }
+
+    })
+    console.log(newItem);
+    console.log(found);
+</script>
+</body>
+</html>

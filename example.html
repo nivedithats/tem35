@@ -17,21 +17,22 @@
 
     <script>
         let len = 0;
-        let str = [1,2,3,4,5,6,7,8,9]
-        document.write(`<h1>builtin method : ${str[5]}</h1>`)
+        let array = [1,2,3,4,5,6,7,8,9]
+        document.write(`<h1>builtin method : ${array[5]}</h1>`)
 
 
-        for(let i =0; str[i] != undefined; i++){//len=0,len=1,len=2,len=3,len=4
+        for(let i =0; array[i] != undefined; i++){//len=0,len=1,len=2,len=3,len=4
             len = i+1;
         }
 
         document.write(`<h1>builtin  method :${len}</h1>`)
+        
 
 
 
 
         for(let i=0; i<len; i++){  
-            document.write(`<h1>array item : ${str[i]}</h1>`)
+            document.write(`<h1>array item : ${array[i]}</h1>`)
         }
     </script>
 </body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <h1>19) entries();</h1>
+    <p>The entries method returns an array iteearor object with key/value pairs.</p>
+    <p>And this method does not change the original array</p>
+   </center> 
+   <hr>
+
+   <p><b>SYNTAX:</b></p>
+   <pre>
+    array.entries();
+   </pre>
+   <hr>
+
+   <script>
+    let days = ['sun','mon','tue','wed','thu','fri','sat'];
+    document.write(`<h2>Array.entries() :${days.entries()}</h2>`)
+    
+
+
+    let iterater = days.entries()//key,value
+console.log(iterater);
+
+
+for(const element of iterater ){
+    document.write(element + "<br>");
+
+}
+document.write(days)
+
+   </script>
+</body>
+</html>

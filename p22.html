@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>20) some();</h1>
+        <p>The some() method tests whether atleast one element in the array passes the test implemented by the provided function.</p>
+        <p>It returns a true Value if, in the array, it founds an element is prpvided function returns true; otherwise it returns false. It does not modifies the array.</p>
+    </center>
+    <hr>
+    <p><b>SYNTAX :  </b></p>
+
+
+    <pre>
+        array.some((element)=>{});
+    </pre>
+
+    <hr>
+
+    <script>
+        let age = [
+            {
+                name:"testname1",
+                age:10
+            },
+            {
+                name:"testname1",
+                age:15
+            },
+            {
+                name:"testname1",
+                age:18
+            },
+            {
+                name:"testname1",
+                age:19
+            },
+            {
+                name:"testname1",
+                age:76
+            },
+            {
+                name:"testname1",
+                age:55
+            }
+        ]
+
+        let isagePresent = age.some((person)=>person.age>18) //true
+        document.write(`<h1>array.some():${isagePresent}</h1>`)
+    </script>
+</body>
+</html>
+
+

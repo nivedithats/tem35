@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .message{
+            padding: 10px;
+            width: fit-content;
+            border-radius: 100px 4px 100px 100px;
+            background: linear-gradient(45deg, #e94711, #c90011);
+        }
+        ul{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            background-color: rgb(255, 255, 255);
+            /* min-height: 500px; */
+        }
+    </style>
+</head>
+<body>
+    
+
+    <center>
+        <h2>17) findIndex();</h2>
+        <p>The findIndex() method returns the first index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function , then -1 is returned</p>
+    </center>
+
+    <hr>
+
+    <p><b>SYNTAX : </b></p>
+
+    <pre>
+        array.findIndex(function(currentValue, index, arr), thisValues);
+    </pre>
+
+    <hr>
+
+
+    <div id="result"></div>
+    <ul id="chatscreen"></ul>
+    <input type="text" id="chat">
+    <button onclick="sendMessage()">Send</button>
+
+
+    <script>
+        let array = [5, 10, 130, 8, 44];
+
+        console.log(array.findIndex((item)=>item>13));
+
+
+        let messages = [
+            {
+                id:1,
+                message:'How are you?'
+            },
+            {
+                id:2,
+                message:'hello'
+            },
+            {
+                id:3,
+                message:'where are you?'
+            }
+        ]
+
+        let messageIndex = messages.findIndex((element)=>element.id == 1 )
+        console.log(messageIndex);
+        console.log(messages[messageIndex].message);
+
+
+
+        let allmessage = []
+        let result = document.getElementById('result');
+        let text = document.getElementById('chat')
+        function sendMessage(){
+          
+
+            allmessage.push(text.value)
+            text.value = " "
+            console.log(allmessage);
+
+
+            let chatscreen = document.getElementById('chatscreen');
+            chatscreen.innerHTML = ""
+            allmessage.map((item, index)=>{
+                chatscreen.innerHTML +=`
+                    <li class="message">${item}</li>
+                `
+            })
+        }
+        // sendMessage()
+
+function checkEmpty(){
+    if(allmessage.length == 0){
+                result.innerHTML = `<h1>There are no message tap to chat now..<h1>`
+            }
+            else{
+                result.innerHTML = `<h1>Loading..<h1>`
+            }
+}
+
+
+checkEmpty()
+        
+    </script>
+
+</body>
+</html>
