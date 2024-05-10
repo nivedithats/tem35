@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>filter()</h1>
+    </center>
+
+
+    <script>
+             var user = [
+             {
+                 id:1,
+                 frist:"raju",
+                 last:"kumar",
+                 email:"raj@gmail.com"
+
+             },
+             {
+                id:2,
+                frist:"sonu",
+                last:"kumar",
+                email:"raj@gmail.com"
+
+            },
+            {
+                id:3,
+                frist:"raju",
+                last:"sharma",
+                email:"raj@gmail.com"
+
+            }
+             ];
+
+             
+
+
+
+
+
+
+        //console.log('output =', user);
+        //array.filter -> output.is.in.array.format
+        //var.user1 = user.filter(function(item).{
+            //   return.item.frist.===."raju"
+        //.});
+
+
+        var user1 = user.filter(item => item.frist  === "raju")
+        console.log('output1 = ',user1);
+    </script>
+</body>
+</html>

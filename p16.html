@@ -24,13 +24,18 @@
     <hr>
 
     <script>
-        let names = ['pooja','keerthi','kushi','pooja','raathi']
+        let names = ['pooja','keerthi','kushi','pooja','rathi']
+        let array = [1,22,3,2,22,22]
 
-        document.write(<h1>result ONE</h1>)
-        document.write(<h1>result one : ${names.lastIndexOf('pooja')}</h1>)
+        document.write(`<h1>result ONE</h1>`)
+        document.write(`<h1>result one : ${names.lastIndexOf('pooja')}</h1>`)
 
-        document.write(<h1>result SECOND</h1>)
-        document.write(<h1>result one : ${names.lastIndexOf('pooja',2)}</h1>)
+        document.write(`<h1>result SECOND</h1>`)
+        document.write(`<h1>result one : ${names.lastIndexOf('pooja',4)}</h1>`)
+
+
+
+        document.write(`<h1> ${array.lastIndexOf(22,3)}</h1>`)
    </script>
 </body>
 </html>

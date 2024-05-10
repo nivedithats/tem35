@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array =[5,12,8,130,44];
+        //builtin findindex method is 
+        const foundIndex = array.findIndex((element)=>element >13);
+        console.log(foundIndex);
+
+
+        if((array.findIndex((element) => element == 800)>=0)){
+            console.log('element is present');
+
+        }
+        else{
+            console.log('element is not present');
+        }
+
+        //own findindex method
+        function ownfindIndex(element){
+            for(let i=0; i<array.length; i++ ){
+                if(array[i] == element){
+                    return i;
+                }
+            }
+            return -1
+        } 
+        console.log(ownfindIndex(12));
+
+
+    </script>
+</body>
+</html>

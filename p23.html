@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>22) fill();</h2>
+        <p>The fill() method fills specified elements in an array with a value, method overwrites the original array</p>
+        <p>Start and end position can be specified. If not, all elements will be filled.</p>
+    </center>
+    <hr>
+
+    <p><b>SYNATX :</b></p>
+    <pre>
+        array.fill(value, start, end);
+    </pre>
+    <hr>
+
+
+
+
+    <script>
+        let fruits = ['banana', 'orange', 'Apple', 'Mango']
+
+        document.write(`<p>before the result of array.fill() : ${fruits}</p>`)
+        document.write(`<p>after the result of array.fill() : ${fruits.fill('kiwi')}</p>`)
+
+        document.write(`<p>fruits : ${fruits}</p>`)
+
+        let fruits2 =  ['banana', 'orange', 'Apple', 'Mango'];
+        document.write(`<p>before the result of array.fill() : ${fruits2}</p>`)
+        document.write(`<p>after the result of array.fill() : ${fruits2.fill('kiwi', 2, 4)}</p>`)
+    </script>
+</body>
+</html>

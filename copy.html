@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <h2>copyWithin();</h2>
+
+        <p>The copywithin() method copies array elements to another position in the array,and this method overwrites the existing values.</p>
+        <p>The copywhin() does not add otem to the array</p>
+    </center>
+
+    <hr>
+    <p><b>SYNTAX:</b></p>
+    <PRE>
+        array.copyWithin(target,start,end);
+
+    </PRE>
+    <script>
+        let fruits = ['banana','orange','Apple','mango']
+
+
+        document.write(`<h1>Before the result of array.copyWithin(target,start,end)${fruits}</h1>`)
+        console.log(fruits);
+
+
+        document.write(`<h1>After the result of array.copyWithin(target,start,end)${fruits.copyWithin(3,0,1)}</h1>`)
+        console.log(fruits);
+    </script>
+</body>
+</html>

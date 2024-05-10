@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>21) some();</h2>
+        <p>The some() method tests whether at least one element in the array passes the test implemented by the provided function.</p>
+        <p>It returns a true Value if, in the array, it founds an element for whichthe provided function returns true; otherwise it returns false. It does not modifies the array.</p>
+    </center>
+    <hr>
+
+    <p><b>SYNATX :</b></p>
+    <pre>
+        array.some((element)=>{});
+    </pre>
+    <hr>
+
+
+    <script>
+           let array1 = [1, 30, 39, 29, 10, 13]; 
+             let result = array1.some((element)=>element <5) //true
+             console.log(result);
+
+
+
+             //own some method
+             function ownSome(){
+                for(let i =0; i<array1.length; i++){
+                    if(array1[i] < 0){
+                        return true
+                    }
+                }
+                return false
+             }
+             console.log(ownSome());
+    </script>
+</body>
+</html>

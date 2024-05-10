@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let days = ["sun","Mon","tue","wed","thu","fri","sat"];
+
+        document.write(days.entries());
+        const keyValue = days.entries()
+
+
+        for(const iterator of keyValue){
+            console.log(iterator[1]);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 0px 6px #0c0c0c;
+        }
+        #products{
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="products"></div>
+
+
+    <script>
+        let allproducts =[
+             
+        {
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw49yJQKa4__S0ZSocp-b3Ad3yFf9Cz-HciA&s",
+            productName: "testProduct1",
+            price:450,
+         },
+
+             {
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw49yJQKa4__S0ZSocp-b3Ad3yFf9Cz-HciA&s",
+            productName: "testProduct2",
+            price:300
+             },
+
+                {
+                img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw49yJQKa4__S0ZSocp-b3Ad3yFf9Cz-HciA&s",
+                productName: "testProduct2",
+                price:200
+                },
+
+                {
+        
+                img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw49yJQKa4__S0ZSocp-b3Ad3yFf9Cz-HciA&s",
+                productName: "testProduct2",
+                price:150
+                         }  
+          
+
+
+        ]
+
+        let result = document.getElementById('products');
+      
+        function displayproduct(){
+            result.innerHTML = ""
+
+            allproducts.map((item,index)=>{
+                result.innerHTML +=`
+                <div class="card">
+                  <h2>${item.productName}</h2>
+                  <img src=${item.img} alt = "">
+                  <h1> &#8377;${item.price}/-</h1>
+                </div>
+                `
+          }); 
+        }
+        displayproduct()
+
+
+
+console.log(allproducts);
+        function displayonOrder1(){
+            allproducts.sort((a,b)=>a.price - b.price)
+            console.log(allproducts);
+
+            displayproduct() //
+
+
+           
+            
+        }
+
+        function displayonOrder2(){
+            allproducts.sort((a,b)=>b.price - a.price)
+            console.log(allproducts);
+
+            displayproduct()
+
+
+           
+            
+        }
+        
+        
+    </script>
+    <button onclick="displayonOrder1()">Display price low to high</button>
+    <button onclick="displayonOrder2()">Display price high to low</button>
+    
+</body>
+</html>

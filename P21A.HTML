@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>20) every();</h2>
+        <p>The every() method tests whether all elements in the array pass the test implemented by the provided function.</p>
+        <p>It returns a Boolean Value.</p>
+    </center>
+    <hr>
+
+    <p><b>SYNATX :</b></p>
+    <pre>
+        array.every((element)=>{});
+    </pre>
+    <hr>
+
+
+    <script>
+        //builtin method
+            let array1 = [1, 30, 39, 29, 10, 13]; //[t, t, t, t, t, t] = true
+            const isbelow =array1.every((element)=>element < 30) //false
+            console.log(isbelow);
+
+
+        //creating own every method
+        function ownEvery(element){
+            var check = true;
+            for(let i = 0; i<array1.length; i++){ 
+              
+               if(array1[i]<element){
+                check = true;
+               }else{
+                return false;
+               }
+            }
+            return true
+        } 
+        console.log(ownEvery(10)); //false
+        console.log(ownEvery(40));//true
+
+        if(ownEvery(50)){ //true
+            console.log('all elements satisfied the given condition');
+        }
+        else{
+            console.log('all elements not satisfied the given condition');
+        }
+
+    </script>
+</body>
+</html>
